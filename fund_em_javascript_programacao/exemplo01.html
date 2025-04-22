@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo01 - Java Script</title>
+    <link rel="shortcut icon" href="./assets/fav_icon.png.png" type="image/x-icon">
+</head>
+
+<body>
+    <h1>Vamos quebrar essa maldição !</h1>
+    <p> Meu primeiro código em JavaScript
+        <Script></Script>
+    </p>
+<p id="Rosas"></p>
+
+    <script>
+
+
+        window.alert('Bem vindo ao site');
+        // window.prompt('uma pergunta qualquer...')
+        
+let numHum = prompt('Digite um Numero:  ');
+let numDois = prompt('Digite outro Numero: ');
+//converte as strings para numeros usando Number
+let numeroHum = Number (numHum);
+let numeroDois = Number(numDois);
+
+let result= numeroHum + numeroDois;
+
+// alert("A soma é: " +result);
+
+document.getElementById("Rosas").innerHTML = "A soma é:" +result;
+
+
+
+        /*
+        let questaoExercic = prompt('uma pergunta qualquer...')
+
+        let nomeUsuario = prompt('Pode me informar seu nome?')
+        let idadePessoa = prompt('Informe sua idade (dd-mm-aa)?')
+        let questionsPessoa = prompt('Qual o seu hobbie?')
+        alert('Vou ser daora legal com você!')
+        alert('Olá' + nomeUsuario + 'Seja bem vindo, sua idade é:' + idadePessoa +
+            'Você gosta de:' + questionsPessoa + '.')
+        alert(' Então sua pergunta foi: ' + questaoExercic)*/
+    </script>
+</body>
+
+</html>
