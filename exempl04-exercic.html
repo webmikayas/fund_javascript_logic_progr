@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04</title>
+    <link rel="shortcut icon" href="/favicon.04.png.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Lâmpada</h1>
+    </header>
+    <section>
+        <div>
+            <img src="/assets/lampada.off.jpeg.jpeg" alt="Lâmpada Off" id="lamp">
+        </div>
+
+        <div>
+            <button id="turnOn">Lá ele </button>
+            <button id="turnOff">Deitou_sem_sono</button>
+        </div>
+
+    </section>
+</body>
+<script>
+
+    const lamp = document.getElementById ("lamp");
+    const turnOn = document.getElementById("turnOn");
+    const turnOff = document.getElementById("turnOff");
+
+    function lamOn (){
+        if(!isLamBroken()){
+            lamp.scr = "./img/lamp_on.jpeg";
+        }
+    }
+
+    function lamOff(){
+        if(!isLamBroken()){
+            lamp.src = "./img/lampada_off.jpeg";
+        
+        }
+    }
+
+    function isLampBroken (){
+        return lamp.src.indexOf ("quebrada") > -1
+    }
+</script>
+</html>
